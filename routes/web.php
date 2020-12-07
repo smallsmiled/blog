@@ -27,3 +27,5 @@ Route::group(['middleware'=> ['web']],function (){
     Route::any('course/update/{id}','CourseController@update');
 });
 
+Route::any('chat/index','ChatController@index');
+Route::any('chat/show','ChatController@show');
